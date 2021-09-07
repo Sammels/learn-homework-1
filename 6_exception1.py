@@ -14,7 +14,18 @@ def hello_user():
     """
     Замените pass на ваш код
     """
-    pass
+    
+    while True:
+        try:
+            check_mood = input("Как дела? ")
+            if check_mood == "Хорошо" or check_mood == "хорошо":
+                print("Славно. Хорошего дня!")
+                break
+                
+        except KeyboardInterrupt:
+            print("\nПока")
+            break
+
     
 if __name__ == "__main__":
     hello_user()
